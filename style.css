@@ -1,0 +1,13 @@
+.box{
+background-color: black;
+border-radius: 50px; 
+height: 100px;
+width: 100px;
+}
+body{
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100vh;           /* Requires a height, e.g., 100% of viewport */
+
+}
