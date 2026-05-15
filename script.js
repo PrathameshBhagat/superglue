@@ -37,7 +37,8 @@ t.to('.box',{ background:'linear-gradient(360deg,#00ffff,#cc33ff,#ff33cc,#0000b3
 t.to('.box',{ background:'linear-gradient(45deg,#00ffff,#cc33ff,#ff33cc,#0000b3,#00ff00,#00ffff,#ffff00,#ff00ff)'})
 
 t.to('.box',{ background:'black'})
-t.to('.box',{ background:'white'})
+t.to('.box',{ background:'white', fontSize:"700%",  height: "250px",width: "750px"})
+t.to('.box',{ fontSize:"500%",  height: "100px",width: "550px"})
 
 t.to('.text',{ duration :1,text:"&check;", fontSize:"1000%"})
 t.to('.text',{ duration :3,text:"&check;", fontSize:"500%"})
