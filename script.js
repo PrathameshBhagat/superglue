@@ -2,38 +2,51 @@ gsap.registerPlugin(TextPlugin)
 
 const timeline = gsap.timeline({defaults:{ }});
 
-
+// Loading ball movement
 for(var i =0 ; i <5; i++){
     timeline.to('.box',{x : '-100%', ease: 'bounce'})
     timeline.to('.box',{x : '100%', ease: 'bounce'})
 }
 
+// Bring ball back to center
 timeline.to('.box',{x : '00%', ease: 'bounce'})
+
+// Ball to logo shape and show text
 timeline.to('.box',{ width : '550px'})
 timeline.to('#logo-text',{ opacity : 1})
+
+// Logo minor animation
 timeline.to('.box',{ backgroundColor : "white"});
 timeline.to('.box',{  border: "5px solid black" })
 timeline.to('.box',{ color:"black"})
 
+// Correct logo position
 timeline.to('.box',{ y:"-100"})
 timeline.to('.box',{ x:"00"})
+
+// Show the rgular text
 timeline.to('.text',{ display: 'block'})
 timeline.to('.text',{ opacity : 1})
 timeline.to('.text',{ text:"Integrations  "})
+
+// Animate the text
 timeline.to('.text',{ duration :3,text:"Integrations in minutes .... "})
 timeline.to('.text',{ duration :2,text:"Integrations in minutes ......"})
 timeline.to('.text',{ duration :3,text:"Integrations in minutes ......"})
+
+// Start counting...
 timeline.to('.text',{ duration :2,text:"."})
 timeline.to('.text',{ duration :1,text:"0"})
 timeline.to('.text',{ duration :1,text:"1"})
 timeline.to('.text',{ duration :1,text:"2"})
 timeline.to('.text',{ duration :1,text:"3"})
 
-timeline.to('.box',{ background:'linear-gradient(45deg,#00ffff,#cc33ff,#ff33cc,#0000b3,#00ff00,#00ffff,#ffff00,#ff00ff)'})
 
+// Rainbow background animation
+timeline.to('.box',{ background:'linear-gradient(45deg,#00ffff,#cc33ff,#ff33cc,#0000b3,#00ff00,#00ffff,#ffff00,#ff00ff)'})
 timeline.to('.box',{ background:'linear-gradient(360deg,#00ffff,#cc33ff,#ff33cc,#0000b3,#00ff00,#00ffff,#ffff00,#ff00ff)'})
-
 timeline.to('.box',{ background:'linear-gradient(45deg,#00ffff,#cc33ff,#ff33cc,#0000b3,#00ff00,#00ffff,#ffff00,#ff00ff)'})
+
 
 timeline.to('.box',{ background:'black'})
 timeline.to('.box',{ background:'white', fontSize:"700%",  height: "250px",width: "750px"})
