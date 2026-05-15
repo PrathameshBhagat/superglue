@@ -71,3 +71,5 @@ timeline.to('.box',{ background:'white', fontSize:"1000%",  height: "500px",widt
 // Minimise logo size to '0' and finally remove everything
 timeline.to('.box',{ background:'white', fontSize:"0%",  height: "0px",width: "0px"})
 timeline.to('.box',{ display:'none'})
+
+timeline.to('body',{ text:"<img src=\"./background.png\"></img>"})
