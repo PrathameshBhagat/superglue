@@ -2,7 +2,6 @@ gsap.registerPlugin(TextPlugin)
 
 const timeline = gsap.timeline({defaults:{ }});
 
-timeline.to('.text',{  display: 'none'})
 
 for(var i =0 ; i <5; i++){
     timeline.to('.box',{x : '-100%', ease: 'bounce'})
